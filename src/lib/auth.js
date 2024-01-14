@@ -33,6 +33,7 @@ export const {
   signIn,
   signOut,
 } = NextAuth({
+  site:process.env.AUTH_URL,
   ...authConfig,
   providers: [
     GitHub({
